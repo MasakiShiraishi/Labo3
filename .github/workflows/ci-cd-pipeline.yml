@@ -15,6 +15,7 @@ jobs:
       - name: Debug Secrets
         run: |
           echo "DOCKER_USERNAME is set"
+          echo "DOCKERHUB_TOKEN is set"
           if [ -z "${{ secrets.DOCKER_USERNAME }}" ]; then echo "DOCKER_USERNAME is empty"; fi
           if [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then echo "DOCKERHUB_TOKEN is empty"; fi
 
